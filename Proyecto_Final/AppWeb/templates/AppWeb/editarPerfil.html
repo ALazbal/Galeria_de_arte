@@ -1,0 +1,59 @@
+{% extends "AppWeb/padre.html" %}
+
+{% block titulo %}
+
+¡Aca se edita al usuario!
+
+{% endblock %}
+
+{% block formulario %}
+
+<style>
+
+    .editar{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .boton{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+</style>
+
+<hr>
+
+<form action="" method="POST"> {% csrf_token %}
+    
+    
+    <div class="editar">    
+        
+        <table>
+        
+        {{ formulario.as_table }}
+    
+        </table>  
+  
+    </div>
+    
+    <hr>    
+
+    <div class="boton">
+        
+        <button type="submit">Editar</button>
+  
+    </div>
+</form>
+
+<hr>
+
+{% endblock %} 
+
+
+

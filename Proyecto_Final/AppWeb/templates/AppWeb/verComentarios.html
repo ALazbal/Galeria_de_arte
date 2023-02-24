@@ -1,0 +1,22 @@
+{% extends "AppWeb/padre.html" %}
+
+{% block titulo %}
+
+<h1 class="display-5 fw-bold">Comentarios</h1>
+
+{% endblock %}
+
+{% block comentarios %}
+
+<hr>
+
+{% for comentario in listaComentarios%}
+
+<p style="font-size: large;"> {{comentario.nombre}} : {{comentario.mensaje}}  </p>
+
+
+{% endfor %}
+
+<hr>
+
+{% endblock %}

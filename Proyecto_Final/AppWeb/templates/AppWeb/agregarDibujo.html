@@ -1,0 +1,31 @@
+{% extends "AppWeb/padre.html" %}
+
+{% block formulario %}
+
+<br>
+<br>
+
+<div class="container">
+    <h1 class="center">Agrega un nuevo dibujo</h1>
+<div class="form-group">
+
+<br>
+
+    <form class="center" method="post" enctype="multipart/form-data">{% csrf_token %}
+    {{ form.as_p }}
+    <div class="container text-center">
+    <button type="submit" class="btn btn-dark">Guardar</button>
+    </div>
+</form>
+</div>
+</div>
+
+<br>
+<br>
+
+<script>
+    var name = "{{ user.id }}";
+    document.getElementById("usuario_id").value = name;
+</script>
+
+{% endblock %}

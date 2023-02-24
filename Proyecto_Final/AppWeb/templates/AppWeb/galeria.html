@@ -1,0 +1,92 @@
+{% extends "AppWeb/padre.html" %}
+{% load static %}
+
+{% block formulario %}
+
+<br>
+<br>
+
+
+    <div class="container">
+       <h2 class="text-center text-dark">
+           Galeria
+       </h2>
+       <br>
+       <div class="row g-4">
+           <div class="center">
+               <div>
+                    <div class="card-body text-center">
+                        
+                        <a href= "{% url 'dibujo_uno' %}">
+
+                            <img src="{% static 'AppWeb/imagenes/dibujo1.jpg' %}" class="center" width="500">
+
+                        </a>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                        <a href= "{% url 'dibujo_dos' %}">
+                        
+                            <img src="{% static 'AppWeb/imagenes/dibujo2.JPG' %}" class="center" width="500">
+    
+                        </a>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                        <a href= "{% url 'dibujo_tres' %}">
+                        
+                            <img src="{% static 'AppWeb/imagenes/dibujo3.JPG' %}" class="center" width="500">
+
+                        </a>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                        <a href= "{% url 'dibujo_cuatro' %}">
+                        
+                            <img src="{% static 'AppWeb/imagenes/dibujo4.JPG' %}" class="center" width="500">
+
+                        </a>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                        <a href= "{% url 'dibujo_cinco' %}">
+                        
+                            <img src="{% static 'AppWeb/imagenes/dibujo5.JPG' %}" class="center" width="500">
+
+                        </a>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                        <a href= "{% url 'dibujo_seis' %}">
+                        
+                            <img src="{% static 'AppWeb/imagenes/dibujo6.JPG' %}" class="center" width="500">
+
+                        </a>
+
+                    </div>
+               </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    
+
+
+{% endblock %}

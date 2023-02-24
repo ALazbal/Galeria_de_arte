@@ -1,0 +1,57 @@
+{% extends "AppWeb/padre.html" %}
+
+{% block titulo %}
+
+<h1 class="display-5 fw-bold">Registrar usuario</h1>
+
+{% endblock %}
+
+{% block formulario %}
+
+<style>
+
+    .registro{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .boton{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+</style>
+
+<hr>
+
+<form action="" method="POST"> {% csrf_token %}
+    
+    
+    <div class="registro">    
+        
+        <table>
+        
+        {{ formulario.as_table }}
+    
+        </table>  
+  
+    </div>
+    
+    <hr>    
+
+    <div class="boton">
+        
+        <button type="submit">Crear usuario</button>
+  
+    </div>
+
+</form>
+
+<hr>
+
+{% endblock %} 
