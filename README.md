@@ -1,4 +1,4 @@
-# Proyecto_Final
+# Galeria de arte
 Proyecto_Final Augusto Lazbal
 
 
